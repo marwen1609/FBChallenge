@@ -9,6 +9,7 @@
 import UIKit
 import Alamofire
 import MBProgressHUD
+
 class ViewController: UIViewController {
     // MARK: - Properties
     var payloadParser = PayloadParser()

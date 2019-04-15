@@ -16,7 +16,7 @@ class PayloadParser {
     // MARK: - Payload Parsing fuction
     func payload(from data: Data?) throws -> Any? {
         
-        do{
+        do {
             if let data = data {
                 if let challengeData = try jsonDecodeSuccessCase(from: data) {
                     return challengeData
@@ -24,7 +24,7 @@ class PayloadParser {
                     return challengeData
                 }
             } else {
-                throw PayloadErrors.NoDataRecived
+                throw PayloadErrors.noDataRecived
             }
         } catch let error as PayloadErrors {
             print(error.description)
@@ -33,7 +33,7 @@ class PayloadParser {
     }
     
     // MARK: - Failure_Case data decoder
-    func jsonDecodeFailureCase(from data: Data?) throws -> FailureCase? {
+   private func jsonDecodeFailureCase(from data: Data?) throws -> FailureCase? {
         do{
             if let parsedData = try JSONSerialization.jsonObject(with: data!) as? JSONDictionary {
                 if let result = bool(parsedData["result"]) {
@@ -43,13 +43,13 @@ class PayloadParser {
                             return FailureCase(result: result, message: message)
                         }
                     }else {
-                        throw PayloadErrors.LogicError
+                        throw PayloadErrors.logicError
                     }
                 }else {
-                    throw PayloadErrors.DataDoNotConfromToEntity
+                    throw PayloadErrors.dataDoNotConfromToEntity
                 }
             }else{
-                throw PayloadErrors.ResponseIsNotJSON
+                throw PayloadErrors.responseIsNotJSON
             }
         }catch let error as PayloadErrors {
             debugPrint(error.description)
@@ -59,7 +59,7 @@ class PayloadParser {
     }
     
     // MARK: - Success_Case data decoder
-    func jsonDecodeSuccessCase(from data: Data?) throws -> SuccessCase? {
+   private func jsonDecodeSuccessCase(from data: Data?) throws -> SuccessCase? {
         do{
             if let parsedData = try JSONSerialization.jsonObject(with: data!) as? JSONDictionary {
                 let result = bool(parsedData["result"])
@@ -72,23 +72,23 @@ class PayloadParser {
                         }else if let payload = parsedData["payload"] {
                             return SuccessCase(result: result, payload: payload)
                         }
-                    }else if let _ = parsedData["payload"] {
-                        throw PayloadErrors.LogicError
+                    } else if let _ = parsedData["payload"] {
+                        throw PayloadErrors.logicError
                     }
-                }else{
-                    throw PayloadErrors.DataDoNotConfromToEntity
+                } else{
+                    throw PayloadErrors.dataDoNotConfromToEntity
                 }
             } else {
-                throw PayloadErrors.ResponseIsNotJSON
+                throw PayloadErrors.responseIsNotJSON
             }
-        }catch let error as PayloadErrors {
+        } catch let error as PayloadErrors {
             debugPrint(error.description)
         }
         return nil
     }
     
     // MARK: - Boolean Conversion of the "result" retuned object
-    func bool(_ value: Any?) -> Bool? {
+  private func bool(_ value: Any?) -> Bool? {
         
         if let value = value as? Bool {
             return value
@@ -101,7 +101,7 @@ class PayloadParser {
     }
     
     // MARK: - Parse of "payload" if it contains an array
-    func parsePayloadToArray(_ value: Any?) -> [Any]? {
+    private func parsePayloadToArray(_ value: Any?) -> [Any]? {
         var returnedArray: [Any] = []
         if let values = value as? [Any]{
             for item in values{
@@ -123,7 +123,7 @@ class PayloadParser {
     }
     
     // MARK: - Parse of "payload" if it contains an JSONObject
-    func parsePayloadToJSONDictionary(_ value: Any?) -> [JSONDictionary]? {
+    private func parsePayloadToJSONDictionary(_ value: Any?) -> [JSONDictionary]? {
         if let value = value as? [JSONDictionary]{
             return value
         }

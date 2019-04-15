@@ -11,21 +11,21 @@ import Foundation
 enum PayloadErrors: Error, CustomStringConvertible {
     
     // MARK: - Members
-    case NoDataRecived
-    case DataDoNotConfromToEntity
-    case ResponseIsNotJSON
-    case LogicError
+    case noDataRecived
+    case dataDoNotConfromToEntity
+    case responseIsNotJSON
+    case logicError
     
     // MARK: - Error description
     var description: String {
         switch self {
-        case .NoDataRecived:
+        case .noDataRecived:
             return "The JSON Data object is empty."
-        case .DataDoNotConfromToEntity:
+        case .dataDoNotConfromToEntity:
             return "The JSON Object do not conform to payload entity"
-        case .ResponseIsNotJSON:
+        case .responseIsNotJSON:
             return "The Response from the request is not a JSON format. "
-        case .LogicError:
+        case .logicError:
             return "The Result Boolean value is CONTRADICTORY to the response fromat"
         }
     }

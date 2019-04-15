@@ -10,25 +10,90 @@ import XCTest
 @testable import FBChallenge
 
 class FBChallengeTests: XCTestCase {
-
+    
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        
     }
-
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    
+    func testFailureWithTrueJSON() {
+        let data = getJSONData(for: "failureWithTrue")
+        let payloadParser = PayloadParser()
+        
+        do {
+            let result = try payloadParser.payload(from: data)
+            XCTAssertNil(result)
+            if let failureCase = result as? FailureCase {
+                XCTAssertThrowsError(payloadParser)
+                XCTAssertNil(failureCase, "It supposed to be nil because of the business logic")
+            }
+            
+        } catch {
+            XCTAssertEqual(error.localizedDescription, PayloadErrors.logicError.description)
         }
     }
-
+    
+    func testComplexJSONData() {
+        let data = getJSONData(for: "complexJson")
+        let payloadParser = PayloadParser()
+        
+        do {
+            let decodedJson = try payloadParser.payload(from: data)
+            XCTAssertNotNil(data)
+            if let successCase = decodedJson as? SuccessCase{
+                XCTAssertNoThrow(payloadParser)
+                XCTAssertNotNil(successCase)
+                XCTAssertNotNil(successCase.payload,"Payload not supposed to be empty")
+            }
+        } catch {
+        }
+    }
+    
+    func testPayloadTable() {
+        let data = getJSONData(for: "payloadTable")
+        let payloadParser = PayloadParser()
+        
+        do {
+            let decodedJson = try payloadParser.payload(from: data)
+            XCTAssertNotNil(data)
+            if let successCase = decodedJson as? SuccessCase{
+                XCTAssertNoThrow(payloadParser)
+                XCTAssertNotNil(successCase)
+                XCTAssertNotNil(successCase.payload,"Payload not supposed to be empty")
+            }
+        } catch {
+        }
+    }
+    
+    func testPayloadEmpty() {
+        let data = getJSONData(for: "payloadEmpty")
+        let payloadParser = PayloadParser()
+        
+        do {
+            let decodedJson = try payloadParser.payload(from: data)
+            XCTAssertNotNil(data)
+            if let successCase = decodedJson as? SuccessCase{
+                XCTAssertNoThrow(payloadParser)
+                XCTAssertNotNil(successCase)
+                XCTAssertNotNil(successCase.payload,"Payload not supposed to be nil")
+            }
+        } catch {
+        }
+    }
+    
+    func getJSONData(for name: String) -> Data? {
+        let bundle = Bundle(for: type(of: self))
+        
+        guard let url = bundle.url(forResource: name, withExtension: "json") else {
+            XCTFail("Missing file: \(name).json")
+            return nil
+        }
+        
+        do {
+            let jsonData = try Data(contentsOf: url)
+            return jsonData
+        } catch {
+            return nil
+        }
+    }
+    
 }

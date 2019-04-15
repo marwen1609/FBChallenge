@@ -11,27 +11,23 @@
 		655F08CF2262C7EF0027399A /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655F08CE2262C7EF0027399A /* Models.swift */; };
 		655F08D32263E5F30027399A /* PayloadParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655F08D22263E5F30027399A /* PayloadParser.swift */; };
 		655F08D52264029A0027399A /* PayloadErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655F08D42264029A0027399A /* PayloadErrors.swift */; };
+		655F08E022651CEC0027399A /* failureWithTrue.json in Resources */ = {isa = PBXBuildFile; fileRef = 655F08DA22651CEB0027399A /* failureWithTrue.json */; };
+		655F08E122651CEC0027399A /* complexJson.json in Resources */ = {isa = PBXBuildFile; fileRef = 655F08DB22651CEB0027399A /* complexJson.json */; };
+		655F08E322651CEC0027399A /* failureJson.json in Resources */ = {isa = PBXBuildFile; fileRef = 655F08DD22651CEC0027399A /* failureJson.json */; };
+		655F08E422651CEC0027399A /* payloadEmpty.json in Resources */ = {isa = PBXBuildFile; fileRef = 655F08DE22651CEC0027399A /* payloadEmpty.json */; };
+		655F08E522651CEC0027399A /* payloadTable.json in Resources */ = {isa = PBXBuildFile; fileRef = 655F08DF22651CEC0027399A /* payloadTable.json */; };
 		65A87CA022628F9100811A7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A87C9F22628F9100811A7C /* AppDelegate.swift */; };
 		65A87CA222628F9100811A7C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A87CA122628F9100811A7C /* ViewController.swift */; };
 		65A87CA522628F9100811A7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65A87CA322628F9100811A7C /* Main.storyboard */; };
 		65A87CA722628F9200811A7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65A87CA622628F9200811A7C /* Assets.xcassets */; };
 		65A87CAA22628F9200811A7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65A87CA822628F9200811A7C /* LaunchScreen.storyboard */; };
 		65A87CB522628F9300811A7C /* FBChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A87CB422628F9300811A7C /* FBChallengeTests.swift */; };
-		65A87CC022628F9300811A7C /* FBChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A87CBF22628F9300811A7C /* FBChallengeUITests.swift */; };
 		9327BF0BBAAC64D142C53B31 /* Pods_FBChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10734CEB87105E8F1B785F47 /* Pods_FBChallenge.framework */; };
 		B3A28B0AFB656EF4D42E3C60 /* Pods_FBChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1A94C308C85C1B8E9BC364C /* Pods_FBChallengeTests.framework */; };
-		DF1414B3E41CFC72DE43A6DE /* Pods_FBChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9796FB943C8CC3F19389AA7 /* Pods_FBChallengeUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		65A87CB122628F9300811A7C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 65A87C9422628F9100811A7C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 65A87C9B22628F9100811A7C;
-			remoteInfo = FBChallenge;
-		};
-		65A87CBC22628F9300811A7C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 65A87C9422628F9100811A7C /* Project object */;
 			proxyType = 1;
@@ -48,6 +44,11 @@
 		655F08CE2262C7EF0027399A /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		655F08D22263E5F30027399A /* PayloadParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayloadParser.swift; sourceTree = "<group>"; };
 		655F08D42264029A0027399A /* PayloadErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayloadErrors.swift; sourceTree = "<group>"; };
+		655F08DA22651CEB0027399A /* failureWithTrue.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = failureWithTrue.json; sourceTree = "<group>"; };
+		655F08DB22651CEB0027399A /* complexJson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = complexJson.json; sourceTree = "<group>"; };
+		655F08DD22651CEC0027399A /* failureJson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = failureJson.json; sourceTree = "<group>"; };
+		655F08DE22651CEC0027399A /* payloadEmpty.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = payloadEmpty.json; sourceTree = "<group>"; };
+		655F08DF22651CEC0027399A /* payloadTable.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = payloadTable.json; sourceTree = "<group>"; };
 		65A87C9C22628F9100811A7C /* FBChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FBChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65A87C9F22628F9100811A7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65A87CA122628F9100811A7C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,9 +59,6 @@
 		65A87CB022628F9300811A7C /* FBChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FBChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65A87CB422628F9300811A7C /* FBChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBChallengeTests.swift; sourceTree = "<group>"; };
 		65A87CB622628F9300811A7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		65A87CBB22628F9300811A7C /* FBChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FBChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		65A87CBF22628F9300811A7C /* FBChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBChallengeUITests.swift; sourceTree = "<group>"; };
-		65A87CC122628F9300811A7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		966659814C0DE3CB674DCC2B /* Pods-FBChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FBChallengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-FBChallengeUITests/Pods-FBChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C1A94C308C85C1B8E9BC364C /* Pods_FBChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FBChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C54657A83BD8E3724E0E78C7 /* Pods-FBChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FBChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-FBChallengeTests/Pods-FBChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -83,14 +81,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3A28B0AFB656EF4D42E3C60 /* Pods_FBChallengeTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		65A87CB822628F9300811A7C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DF1414B3E41CFC72DE43A6DE /* Pods_FBChallengeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,12 +112,23 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		655F08D922651CDC0027399A /* JSONs */ = {
+			isa = PBXGroup;
+			children = (
+				655F08DB22651CEB0027399A /* complexJson.json */,
+				655F08DF22651CEC0027399A /* payloadTable.json */,
+				655F08DE22651CEC0027399A /* payloadEmpty.json */,
+				655F08DD22651CEC0027399A /* failureJson.json */,
+				655F08DA22651CEB0027399A /* failureWithTrue.json */,
+			);
+			path = JSONs;
+			sourceTree = "<group>";
+		};
 		65A87C9322628F9100811A7C = {
 			isa = PBXGroup;
 			children = (
 				65A87C9E22628F9100811A7C /* FBChallenge */,
 				65A87CB322628F9300811A7C /* FBChallengeTests */,
-				65A87CBE22628F9300811A7C /* FBChallengeUITests */,
 				65A87C9D22628F9100811A7C /* Products */,
 				E6A5F6C5D52D9BCA60173FB9 /* Pods */,
 				DA01880582E3B00D8DB3A9F0 /* Frameworks */,
@@ -139,7 +140,6 @@
 			children = (
 				65A87C9C22628F9100811A7C /* FBChallenge.app */,
 				65A87CB022628F9300811A7C /* FBChallengeTests.xctest */,
-				65A87CBB22628F9300811A7C /* FBChallengeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -163,19 +163,11 @@
 		65A87CB322628F9300811A7C /* FBChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
+				655F08D922651CDC0027399A /* JSONs */,
 				65A87CB422628F9300811A7C /* FBChallengeTests.swift */,
 				65A87CB622628F9300811A7C /* Info.plist */,
 			);
 			path = FBChallengeTests;
-			sourceTree = "<group>";
-		};
-		65A87CBE22628F9300811A7C /* FBChallengeUITests */ = {
-			isa = PBXGroup;
-			children = (
-				65A87CBF22628F9300811A7C /* FBChallengeUITests.swift */,
-				65A87CC122628F9300811A7C /* Info.plist */,
-			);
-			path = FBChallengeUITests;
 			sourceTree = "<group>";
 		};
 		DA01880582E3B00D8DB3A9F0 /* Frameworks */ = {
@@ -242,25 +234,6 @@
 			productReference = 65A87CB022628F9300811A7C /* FBChallengeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		65A87CBA22628F9300811A7C /* FBChallengeUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 65A87CCA22628F9300811A7C /* Build configuration list for PBXNativeTarget "FBChallengeUITests" */;
-			buildPhases = (
-				1E8D6EB49A4A62193C2128F3 /* [CP] Check Pods Manifest.lock */,
-				65A87CB722628F9300811A7C /* Sources */,
-				65A87CB822628F9300811A7C /* Frameworks */,
-				65A87CB922628F9300811A7C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				65A87CBD22628F9300811A7C /* PBXTargetDependency */,
-			);
-			name = FBChallengeUITests;
-			productName = FBChallengeUITests;
-			productReference = 65A87CBB22628F9300811A7C /* FBChallengeUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -275,10 +248,6 @@
 						CreatedOnToolsVersion = 10.1;
 					};
 					65A87CAF22628F9300811A7C = {
-						CreatedOnToolsVersion = 10.1;
-						TestTargetID = 65A87C9B22628F9100811A7C;
-					};
-					65A87CBA22628F9300811A7C = {
 						CreatedOnToolsVersion = 10.1;
 						TestTargetID = 65A87C9B22628F9100811A7C;
 					};
@@ -299,7 +268,6 @@
 			targets = (
 				65A87C9B22628F9100811A7C /* FBChallenge */,
 				65A87CAF22628F9300811A7C /* FBChallengeTests */,
-				65A87CBA22628F9300811A7C /* FBChallengeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -319,41 +287,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		65A87CB922628F9300811A7C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				655F08E122651CEC0027399A /* complexJson.json in Resources */,
+				655F08E422651CEC0027399A /* payloadEmpty.json in Resources */,
+				655F08E522651CEC0027399A /* payloadTable.json in Resources */,
+				655F08E322651CEC0027399A /* failureJson.json in Resources */,
+				655F08E022651CEC0027399A /* failureWithTrue.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1E8D6EB49A4A62193C2128F3 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-FBChallengeUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		56AD2F45CE8CB3A675DA5179 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -446,14 +390,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		65A87CB722628F9300811A7C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				65A87CC022628F9300811A7C /* FBChallengeUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -461,11 +397,6 @@
 			isa = PBXTargetDependency;
 			target = 65A87C9B22628F9100811A7C /* FBChallenge */;
 			targetProxy = 65A87CB122628F9300811A7C /* PBXContainerItemProxy */;
-		};
-		65A87CBD22628F9300811A7C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 65A87C9B22628F9100811A7C /* FBChallenge */;
-			targetProxy = 65A87CBC22628F9300811A7C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -689,48 +620,6 @@
 			};
 			name = Release;
 		};
-		65A87CCB22628F9300811A7C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 966659814C0DE3CB674DCC2B /* Pods-FBChallengeUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R2T28JJ87V;
-				INFOPLIST_FILE = FBChallengeUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = JamelMarwen.FBChallengeUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = FBChallenge;
-			};
-			name = Debug;
-		};
-		65A87CCC22628F9300811A7C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5FB0CF1B2658088ECF97CF92 /* Pods-FBChallengeUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R2T28JJ87V;
-				INFOPLIST_FILE = FBChallengeUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = JamelMarwen.FBChallengeUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = FBChallenge;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -757,15 +646,6 @@
 			buildConfigurations = (
 				65A87CC822628F9300811A7C /* Debug */,
 				65A87CC922628F9300811A7C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		65A87CCA22628F9300811A7C /* Build configuration list for PBXNativeTarget "FBChallengeUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				65A87CCB22628F9300811A7C /* Debug */,
-				65A87CCC22628F9300811A7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
