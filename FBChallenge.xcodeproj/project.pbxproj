@@ -16,6 +16,7 @@
 		655F08E322651CEC0027399A /* failureJson.json in Resources */ = {isa = PBXBuildFile; fileRef = 655F08DD22651CEC0027399A /* failureJson.json */; };
 		655F08E422651CEC0027399A /* payloadEmpty.json in Resources */ = {isa = PBXBuildFile; fileRef = 655F08DE22651CEC0027399A /* payloadEmpty.json */; };
 		655F08E522651CEC0027399A /* payloadTable.json in Resources */ = {isa = PBXBuildFile; fileRef = 655F08DF22651CEC0027399A /* payloadTable.json */; };
+		6571DEE8226539AB00F95360 /* resultISNotBool.json in Resources */ = {isa = PBXBuildFile; fileRef = 6571DEE7226539AB00F95360 /* resultISNotBool.json */; };
 		65A87CA022628F9100811A7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A87C9F22628F9100811A7C /* AppDelegate.swift */; };
 		65A87CA222628F9100811A7C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A87CA122628F9100811A7C /* ViewController.swift */; };
 		65A87CA522628F9100811A7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65A87CA322628F9100811A7C /* Main.storyboard */; };
@@ -49,6 +50,7 @@
 		655F08DD22651CEC0027399A /* failureJson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = failureJson.json; sourceTree = "<group>"; };
 		655F08DE22651CEC0027399A /* payloadEmpty.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = payloadEmpty.json; sourceTree = "<group>"; };
 		655F08DF22651CEC0027399A /* payloadTable.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = payloadTable.json; sourceTree = "<group>"; };
+		6571DEE7226539AB00F95360 /* resultISNotBool.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = resultISNotBool.json; sourceTree = "<group>"; };
 		65A87C9C22628F9100811A7C /* FBChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FBChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65A87C9F22628F9100811A7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65A87CA122628F9100811A7C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 		655F08D922651CDC0027399A /* JSONs */ = {
 			isa = PBXGroup;
 			children = (
+				6571DEE7226539AB00F95360 /* resultISNotBool.json */,
 				655F08DB22651CEB0027399A /* complexJson.json */,
 				655F08DF22651CEC0027399A /* payloadTable.json */,
 				655F08DE22651CEC0027399A /* payloadEmpty.json */,
@@ -289,6 +292,7 @@
 			files = (
 				655F08E122651CEC0027399A /* complexJson.json in Resources */,
 				655F08E422651CEC0027399A /* payloadEmpty.json in Resources */,
+				6571DEE8226539AB00F95360 /* resultISNotBool.json in Resources */,
 				655F08E522651CEC0027399A /* payloadTable.json in Resources */,
 				655F08E322651CEC0027399A /* failureJson.json in Resources */,
 				655F08E022651CEC0027399A /* failureWithTrue.json in Resources */,

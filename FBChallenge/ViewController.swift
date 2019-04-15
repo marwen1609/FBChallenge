@@ -13,7 +13,7 @@ import MBProgressHUD
 class ViewController: UIViewController {
     // MARK: - Properties
     var payloadParser = PayloadParser()
-    var urlPath: URLConvertible = "https://raw.githubusercontent.com/marwen1609/GMP/master/complexJson.json"
+    var urlPath: URLConvertible = "https://raw.githubusercontent.com/marwen1609/GMP/master/failureWithTrue.json"
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
