@@ -28,11 +28,10 @@ class ViewController: UIViewController {
             case .success:
                 do {
                     let parsedData = try self.payloadParser.payload(from: response.data)
-                    if let successData = parsedData as? SuccessCase {
-                        print(successData.payload)
-                        print(successData.result)
-                    } else if let failureData = parsedData as? FailureCase {
-                        print(failureData.message)
+                    if let successData = parsedData {
+                        print(successData)
+                    } else if let failureData = parsedData  {
+                        print(failureData)
                     }
                 }catch let error {
                     debugPrint(error)

@@ -13,15 +13,18 @@ class PayloadParser {
     // MARK: - Properties
     typealias JSONDictionary = [String:Any]
     
-    // MARK: - Payload Parsing fuction
+    /// This methode parse the json data and returns the message or the payload json object otherwise returns nil 
+    ///
+    /// - Parameter data: Data Object returned from JSON string
+    /// - Returns: JSON object for "payload" key, or nil if operation failed or the data is incorrect.
     func payload(from data: Data?) throws -> Any? {
         
         do {
             if let data = data {
                 if let challengeData = try jsonDecodeSuccessCase(from: data) {
-                    return challengeData
+                    return challengeData.payload
                 }else if let challengeData = try jsonDecodeFailureCase(from: data) {
-                    return challengeData
+                    return challengeData.message
                 }
             } else {
                 throw PayloadErrors.noDataRecived
